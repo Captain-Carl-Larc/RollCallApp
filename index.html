@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class Attendance system</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="header">
+        <h1>CountPro</h1>
+    </section>
+
+    <section class="main" id="main">
+        <h2>Instructions</h2>
+        <ol id="instructions">
+            <li>Enter Lesson details and save.</li>
+            <li>Enter student's registration number.</li>
+            <li>Click save button.</li>
+            <li>Click to see attendance.</li>
+        </ol>
+        <div class="terms">
+            <input type="checkbox" onclick="agreeTerms()" check-box">
+            <p>I agree to <a href="#">terms</a> and <a href="#">conditions.</a></p>
+        </div>
+        <p class="errormsg no-display">Please check the box above!</p>
+        <button id="proceed" class="no-display" onclick="showLessonDetails()">Get started</button>
+
+    </section>
+
+    <section class="no-display" id="lesson-details" class="lessonData">
+        <h2>Enter lesson details below</h2>
+        <div class="lesson-details-container">
+            <input type="text" id="unit-name" required class="unit-name" placeholder="Unit name">  
+            <input type="text" id="unit-code" required class="unit-code" placeholder="Unit code">  
+            <input type="text" id="lec-name" required class="lec-name" placeholder="Lecturer's name">  
+            <input type="text" id="venue" required class="venue" placeholder="venue">  
+        </div>
+        <button onclick="checkFullness()" id="submit-lesson-details">Save</button>
+    </section>
+
+    <section class="no-display"  id="student-data-section">
+        <h2>Take Roll call</h2>
+        <input type="text" required placeholder="Registration number" id="Reginput" class="Reginput">
+        <button onclick="clickBtn()">Register</button>
+        <button onclick="displayOP()">View</button>
+    </section>
+
+    <section class="no-display" id="display">
+        <div class="subject" id="detsCont">
+            <h3>Lesson Data</h3>
+            <!-- <p>Unit name</p>
+            <p>Unit name</p>
+            <p>Unit name</p>
+            <p>Unit name</p> -->
+        </div>
+        <div class="learners">
+            <h3>Students' Data</h3>
+            <ol class="students-present" id="present-list">
+                <!-- <li>Carl</li>
+                <li>Carl</li>
+                <li>Carl</li>
+                <li>Carl</li> -->
+            </ol>
+        </div>
+        <button>Clear</button>
+    </section>
+    <section class="footer">
+       &copy; Carl 2024
+       <p>All rights reserved</p>
+    </section>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+   /*  min-height: 250vh; */
+}
+
+.header{
+    background-color: rgb(61, 61, 228);
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem 0rem 1rem 0rem;
+    width: 100%;
+    background-color: red;
+}
+.main h2{
+    padding: 0.5rem;
+    text-decoration: underline;
+    color: rgba(0, 128, 0, 0.863);
+}
+
+.main ol{
+    width: 80%;
+
+}
+.main ol li{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+   
+    
+}
+
+.main .terms{
+    margin: 0.8rem 0rem 0.6rem 0rem;
+    display: flex;
+}
+
+.main .terms input{
+    margin: 0rem 0.4rem 0rem 0rem;
+}
+.main button{
+    padding: 0.3rem;
+    margin: 0.5rem 0rem 0.5rem 0rem;
+    width: 7rem;
+    height: 2.3rem;
+    background-color: rgba(92, 0, 240, 0.747);
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.errormsg{
+    color: rgb(94, 184, 5);
+   
+}
+
+/* UTILITY CLASS TO HIDE ITEMS */
+.no-display{
+    display: none;
+}
+
+.hide{
+    display: none;
+}
+/* UTILITY CLASS FOR FORMS */
+
+.lessonData{
+    background-color: pink;
+    /* min-height: 48vh; */
+}
+.lessonData h2{
+    text-align: center;
+    margin: 0rem 0rem 0.3rem 0rem;
+    color: rgba(0, 128, 0, 0.863); 
+    text-decoration: underline;
+}
+.lesson-details-container{
+    width: 80%;
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    height: fit-content;
+   /*  min-height: 100vh; */
+}
+
+.lesson-details-container input{
+    margin: 0.3rem 0rem;
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: 0.8rem;
+    padding-left: 0.5rem;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 0.3rem;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.lesson-details-container input::placeholder{
+    color: rgb(26, 26, 173);
+    font-weight: 600;
+}
+
+#submit-lesson-details{
+    margin: 0.5rem 39%;
+    text-align: center;
+    width: 5rem;
+    padding: 0.1rem;
+    height: 2rem;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    color: rgba(245, 245, 245, 0.856);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.registration{
+    padding-top: 0.4rem;
+    background-color: yellow;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Reginput{
+    height: 1.6rem;
+    padding-left: 0.6rem;
+   margin-top: 0.6rem;
+
+}
+.registration input{
+    padding: 0.5rem 0.8rem;
+    border: 1px solid green;
+    outline: none;
+    border-radius: 0.3rem;
+    color: black;
+    font-size: 1.1rem;
+}
+
+.registration input::placeholder{
+    color: rgb(26, 26, 173);
+    font-weight: 600;
+    padding: 0.4rem;
+}
+
+.registration button{
+   /*  margin: 0.5rem 39%; */
+   margin: 0.5rem 0rem 0.5rem 0rem;
+    text-align: center;
+    width: 5rem;
+    padding: 0.1rem;
+    height: 2rem;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    color: rgba(245, 245, 245, 0.856);
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+#display{
+    background-color: purple;
+    width: 100%;
+    padding-top: 0.6rem;
+}
+#display div h3{
+    text-align: center;
+    text-decoration: underline;
+    color: rgba(0, 128, 0, 0.863); 
+}
+
+#display .subject{
+    font-size: 1.2rem;
+}
+
+.students-present{
+    margin-left: 2rem;
+    font-size: 1.2rem;
+}
+
+#display button{
+    margin: 0.5rem 38%;
+    text-align: center;
+    width: 5rem;
+    padding: 0.1rem;
+    height: 2rem;
+    background-color: blueviolet;
+    outline: none;
+    border: none;
+    border-radius: 1.5rem;
+    color: rgba(245, 245, 245, 0.856);
+    font-weight: 550;
+    font-size: 1rem;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border-top: 2px solid black;
+}
